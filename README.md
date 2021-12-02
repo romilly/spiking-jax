@@ -3,10 +3,15 @@
 I've written simulations of a Leaky Integrate and Fire Neuron in *Plowman's* (pure) Python, Python + numpy, and 
 Python + JAX.
 
+Here's a plot of a 2000-step simulation for a single neuron:
+
+![Single neuron](docs/images/lif.png)
+
 The speedups using Jax and the JAX jit compiler are dramatic.
 
 Pure Python can simulate a single step for a single neuron in roughly 0.25 µs. so *1,000,000 neurons* would take 
 about **0.25 seconds**.
+
 
 numpy can simulate a single step *for 1,000,000 neurons* in **13.7 ms**.
 
